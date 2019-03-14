@@ -53,7 +53,7 @@ def predict():
             # todo: extract text from query
             # todo: preprocess text
             # todo: perform inference (hint: need context manager)
-            # todo: convert prediction into some sensible message i.e. it was pos/neg/neutral
+            # todo: convert prediction into some sensible message i.e. it was pos/neg
 
             data['predictions'] = None  # todo: assign return message
             data["success"] = True

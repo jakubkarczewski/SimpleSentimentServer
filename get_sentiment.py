@@ -34,7 +34,7 @@ if __name__ == '__main__':
     parser.add_argument("--api_inference_url", type=str, default='http://localhost:5000/predict',
                         help="Prediction URL")
     parser.add_argument("--review_type", type=str, required=True,
-                        help="Type of review: positive, neutral, negative.")
+                        help="Type of review: positive, negative.")
     args = parser.parse_args()
 
     review = get_review(args.review_type)
