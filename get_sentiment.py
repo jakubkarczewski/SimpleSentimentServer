@@ -24,7 +24,8 @@ def run_request(review, url):
         exit()
 
     if r['success']:
-        print(r['predictions'])
+        outcome = 'positve' if r['predictions'] > 0.5 else 'negative'
+        print('text was {} with score {}'.format(outcome, r['predictions']))
     else:
         print('Request failed')
 
